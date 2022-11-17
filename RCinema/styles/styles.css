@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'Darker Grotesque';
+    src:local(DarkerGrotesque-SemiBold), 
+    url('../fonts/DarkerGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/DarkerGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: local(DarkerGrotesque-Regular) 
+    url('../fonts/DarkerGrotesque-Regular.woff2'), format('woff2'),
+        url('../fonts/DarkerGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: url('../fonts/DarkerGrotesque-Medium.woff2') format('woff2'),
+        url('../fonts/DarkerGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: #121521;
+    color: #fff;
+    line-height: 130%;
+    margin: 0;   
+}
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+    width: 1240px;
+    margin: auto;
+}
+
+p {
+    color: #B2B2D3;
+}
+/*
+================================
+Верхнее меню
+================================
+*/
+.header-menu {
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+.main-menu--decor {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 42px;
+}
+/*
+================================
+Блок "Rooftop cinema"
+================================
+*/
+.main-block {
+    overflow: hidden;
+}
+.main-block-cont {
+    height: 750px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-block__img-box {
+    position: absolute;
+    right: -340px;
+    top: 0;
+}
+.main-text {
+    width: 455px;
+}
+.main-text__upper-text {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.main-text__heading {
+    font-size: 60px;
+    margin: 60px 0 30px 0;
+}
+.main-text__slogan {
+    font-size: 32px;
+    line-height: 130%;
+    width: 320px;
+}
+.buttons {
+    display: flex;
+    width: 410px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.button-filled {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    
+    height: 59px;
+    background: #40467C;
+    border: #40467C 2px solid;
+    
+}
+.button-filled__width {
+    width: 176px;
+}
+
+.button-filled:hover {
+content: "";
+background: #51578C;
+}
+.button-border {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 204px;
+    height: 59px;
+    border: #fff 2px solid;
+}
+.button-border:hover {
+    background: #fff;
+    color: #40467C;
+}
+/*
+================================
+Блок "Open-air film experience"
+================================
+*/
+.video-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1242px;
+    height: 524px;
+    background: #1B213A;
+    margin-top: 119px;
+}
+.video-block__left {
+    width: 555px;
+    height: 405px;
+    margin-top: 55px;
+    margin-right: 40px;
+}
+.video-block__text {
+    display: grid;
+    grid-template-columns: 275px 275px;
+    gap: 30px;
+}
+.video-block__heading {
+    font-size: 46px;
+    width: 427px;
+    height: 98px;
+    margin: 0;
+    line-height: 46px;
+}
+.video-block__item-heading {
+    font-size: 28px;
+    line-height: 100%;
+    margin: 30px 0 0 0;
+}
+.video-block__item-heading--bot {
+    height: 60px;
+}
+.video-block__item-text {
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 0;
+    width: 270px;
+}
+.video-block__btn {
+    z-index: 50;
+    position: absolute;
+    width: 57.04px;
+    height: 60px;
+    background: #40467C;
+    top: 232px;
+    left: 274px;
+}
+.video-block__btn:hover {
+    content: "";
+    background: #51578C;
+}
+.video-block__poster {
+    z-index: 0;
+}
+.video-block__overlay {
+    position: relative;
+}
+.video-block__overlay::before {
+    content: "";
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(20, 25, 35, 0.6) 31.25%, rgba(20, 25, 35, 0) 100%);
+}
+.video-block__btn-play {
+    position: absolute;
+    margin: auto;
+    top: 18px;
+    left: 22px;
+}
+
+
+.scroll {
+    height: 840px;
+    margin: auto;
+}
+
+.scroll__cards {
+    display: flex;
+    justify-content: space-between;
+    height: 593px;
+    align-items: center;
+
+}
+.scroll__picture  {
+    width: 394px;
+    height: 394px;
+}
+.scroll__item {
+    position: relative;
+    width: 394px;
+    height: 493px;
+}
+.scroll__text {
+    display: flex;
+    justify-content: space-between;
+    width: 394px;
+    height: 38px;
+    align-items: center;
+}
+.scroll__rating {
+    display: flex;
+    justify-content: space-between;
+    width: 49px;
+    height: 16px;
+    align-items: center;
+}
+.block-heading {
+    font-size: 48px;
+}
+.scroll__name-lock {
+    font-size: 28px;
+    color: #fff;
+}
+.scroll__grade {
+    font-size: 20px;
+    color: #fff;
+}
+.scroll__loc-bot {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.scroll__price {
+    font-size: 20px;
+}
+.line-color {
+    color: #fff;
+}
+.button-filled__width-two {
+    width: 168px;
+    position: absolute;
+    top: 168px;
+    left: 110px;
+    z-index: 50;
+}
+.scroll__top-line {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    margin-top: 126px;
+}
+
+.turn-btns__left {
+
+width: 57.04px;
+height: 60px;
+border: #40467C 1px solid;
+position: relative;
+
+}
+.turn-btns__left:hover {
+    content: "";
+    border: #B2B2D3 1px solid;
+}
+
+.turn-btns {
+   display: flex;
+   justify-content: space-between;
+   width: 145px;
+}
+.turn-btns__right {
+    width: 57.04px;
+    height: 60px;
+    background: #40467C;
+    position: relative;
+    border: #40467C 1px solid;
+}
+.turn-btns__right:hover {
+    content: "";
+background: #51578C;
+}
+
+.turn-btns__btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.gallery__top-line {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.gallery {
+    height: 850px;
+}
+.gallery__top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery__link {
+    margin-left: 45px;
+    font-size: 24px;
+}
+.gallery__imgs {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 289px);
+    gap: 29px;
+}
+.gallery__imgs img {
+    width: 289px;
+    height: 300px;
+}
+
+.gallery__img-big-block {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 607px;
+    height: 630px;
+}
+.gallery__img-big-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*
+===========================
+
+===========================
+*/
+.contact-form__r-part {
+    width: 636px;
+    height: 640px;
+    background: #1B213A;
+    
+}
+.contact-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+    position: relative;
+    height: 800px;
+    align-items: center;
+}
+.contact-form__img {
+    position: absolute;
+    left: -340px;
+    
+}
+.contact-form__heading {
+    font-size: 48px;
+    margin-bottom: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-form__input {
+    width: 484px;
+    height: 60px;
+    border: #40467C 1px solid;
+    background: none;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.contact-form__area {
+    width: 484px;
+    height: 126px;
+    border: #40467C 1px solid;
+    background: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.contact-form__button {
+    width: 204px;
+    height: 60px;
+    border: #40467C 1px solid;
+    background: #40467C;
+    color: #fff;
+    text-transform: uppercase;
+    size: 17px;
+}
+
+.contact-form__bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.contact-form__accepting {
+    width: 204px;
+}
+.contact-form__inside {
+    width: 484px;
+    height: 440px;
+    margin: 100px 76px;
+}
+.contact-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-form__accepting {
+    color: #B2B2D3;
+}
+.contact-form__checkbox--change {
+
+color: #fff;}
+
+.scroll__picture-box::after {
+    content: "";
+    position: absolute;
+    width: 394px;
+    height: 394px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, rgba(20, 25, 35, 0.8), rgba(20, 25, 35, 0.8)), url(.jpg);;
+}
+.contact-form__input:focus {
+    outline: none;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 20px;
+}
+.contact-form__area:focus {
+    outline: none;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 20px;
+}
+.contact-form__button:hover {
+    content: "";
+    background: #51578C;
+}
